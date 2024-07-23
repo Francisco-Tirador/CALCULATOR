@@ -4,3 +4,20 @@
   margin: 0 auto;
   text-align: center;
 }
+
+
+
+.mov_horizontal{
+    opacity: 60%;
+    transform: translateY(20deg);
+}
+
+
+
+
+
+
+
+
+
+

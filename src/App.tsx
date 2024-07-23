@@ -7,22 +7,25 @@ import './App.css'
 import ScreenCalculator from './components/ScreenCalculator'
 import HeaderCalculator from './components/HeaderCalculator'
 import KeyboardCalculator from './components/KeyboardCalculator'
+import Fondo from './components/Fondo'
 
 
 function App() {
-  const [resul, setResult] = useState<number>(0)
+  const [result, setResult] = useState<string>("0")
+  const [preResult, setPreResult] = useState<number>(0)
 
 
   return (
     <div className='app flex' >
+      {/* <Fondo/> */}
 
       <div className='w-[90%] max-w-md h-[95%] bg-gray-300  flex-wrap max-h-[600px] rounded-[30px] m-auto ' id='calculator'>
 
-     <HeaderCalculator/>
+      <HeaderCalculator/>
 
-        <ScreenCalculator result={resul}/>
+      <ScreenCalculator result={result} preResult={preResult}/>
 
-      <KeyboardCalculator />
+      <KeyboardCalculator  result={result} setResult={setResult} preResult={preResult} setPreResult={setPreResult}/>
 
       </div>
 
