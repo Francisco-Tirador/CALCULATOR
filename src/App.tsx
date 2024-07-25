@@ -15,7 +15,7 @@ function App() {
   const [result, setResult] = useState<string>("0")
   const [preResult, setPreResult] = useState<number>(0)
 
-
+ 
   return (
     <div className='app flex' >
  
